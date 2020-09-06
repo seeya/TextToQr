@@ -9,4 +9,4 @@ http.createServer((req, res) => {
     width: 200
   });
 
-}).listen(8080);
+}).listen(process.env.PORT ? process.env.PORT : 8080);
